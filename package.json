@@ -1,0 +1,26 @@
+{
+  "name": "drizzle-raw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx watch -r dotenv/config index.ts",
+    "introspect": "drizzle-kit introspect:pg --config=drizzle.config.ts",
+    "generate": "drizzle-kit generate:pg --config=drizzle.config.ts",
+    "migrate": "tsx -r dotenv/config migrate.ts",
+    "studio": "drizzle-kit studio"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "16.3.2",
+    "drizzle-orm": "0.29.3",
+    "pg": "^8.11.3",
+    "postgres": "3.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.5",
+    "drizzle-kit": "0.20.13",
+    "tsx": "4.7.0"
+  }
+}
